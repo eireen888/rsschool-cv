@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+
+    <title>CV - I K</title>
+  </head>
+  <body class="body">      
+    <header>
+      <div class="av">
+        <img  width="140" src="./assets/img/unnamed.png" alt="avatar">
+      </div>  
+      <nav>
+        <ul>
+          <h5>Irina K</h5>
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#code">Code</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education, Languages">Education, Languages</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Irina K</h1>
+      <h2><a name="summary">Summary</a></h2>
+      <p>My goal is to learn Front-End development. I like to learn everything new and interesting. My strengths are problem solving and fast learning. I want to gain knowledge and skills that are enough to work in the company.</p>
+      <h2><a name="contacts">Contacts</a></h2>
+        <ul>
+          <li>GitHub: <a href="https://github.com/eireen888/">eireen888</a></li>
+        </ul>
+      <h2><a name="skills">Skills</a></h2>
+        <ul>
+          <li>HTML, CSS</li>
+          <li>Visual Studio Code</li>
+          <li>Photoshop</li>
+        </ul>
+        <h2><a name="code">Code</a></h2>
+          <pre>
+            <code>
+              let copterImg=document.getElementById("copter");
+              let treasureImg=document.getElementById("treasure");
+              let step=0;
+              let step1=0;
+              let flag=true;
+              let flag1=true;
+              function animation(){ 
+                  if(window.innerWidth-260>step&&flag1){
+                      copterImg.style.transform="scaleX(1)";
+                      step+=1; 
+                  }else{
+                      copterImg.style.transform="scaleX(-1)";
+                      step-=1;
+                      flag1=step==0?true:false;
+                  }
+                  if(Math.round(window.innerWidth/2==step+260)){
+                      treasureImg.style.visibility="visible";
+                      function treasure(){
+                      if (window.innerHeight-250>step1&&flag){
+                          step1+=1;
+                      }else{
+                         flag=step1==0?true:false;
+                      }   
+                      treasureImg.style.top=step1+"px";
+                  }
+                  setInterval(treasure,6);
+                  }
+                  copterImg.style.left=step+"px";
+              }
+              setInterval(animation,6);
+            </code>
+          </pre>
+        <h2><a name="projects">Projects</a></h2>
+          <ul>
+            <li><a href="https://github.com/eireen888/rsschool-cv/blob/gh-pages/cv.md">cv.md</a></li>
+          </ul>
+        <h2><a name="education, Languages">Education, Languages</a></h2>
+        <ul>
+          <li>English - A1</li>
+        </ul>
+    </main>
+    <footer>
+      <span>© 2022 by Irina K</span>
+      <a href="https://github.com/eireen888">Github</a>
+      <a href="https://rs.school/js/">
+        <img width="60" height="45" src="./assets/img/rs_school_js.svg" alt="logo">
+      </a>
+    </footer>
+  </body>
+</html>
