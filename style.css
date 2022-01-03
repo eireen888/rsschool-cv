@@ -1,1 +1,7 @@
-{}
+.body{
+    max-width: 1012px;
+    margin: 0 auto;
+}
+.av{
+    margin: 10px 0;
+}
