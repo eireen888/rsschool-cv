@@ -18,70 +18,69 @@
       </div>  
       <nav>
         <ul>
-          <h5>Irina K</h5>
           <li><a href="#summary">Summary</a></li>
           <li><a href="#contacts">Contacts</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#code">Code</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#education, Languages">Education, Languages</a></li>
+          <li><a href="#education,Languages">Education, Languages</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <h1>Irina K</h1>
-      <h2><a name="summary">Summary</a></h2>
+      <h2 id="summary">Summary</h2>
       <p>My goal is to learn Front-End development. I like to learn everything new and interesting. My strengths are problem solving and fast learning. I want to gain knowledge and skills that are enough to work in the company.</p>
-      <h2><a name="contacts">Contacts</a></h2>
+      <h2 id="contacts">Contacts</h2>
         <ul>
           <li>GitHub: <a href="https://github.com/eireen888/">eireen888</a></li>
         </ul>
-      <h2><a name="skills">Skills</a></h2>
+      <h2 id="skills">Skills</h2>
         <ul>
           <li>HTML, CSS</li>
           <li>Visual Studio Code</li>
           <li>Photoshop</li>
         </ul>
-        <h2><a name="code">Code</a></h2>
+        <h2 id="code">Code</h2>
           <pre>
             <code>
-              let copterImg=document.getElementById("copter");
-              let treasureImg=document.getElementById("treasure");
-              let step=0;
-              let step1=0;
-              let flag=true;
-              let flag1=true;
-              function animation(){ 
-                  if(window.innerWidth-260>step&&flag1){
-                      copterImg.style.transform="scaleX(1)";
-                      step+=1; 
-                  }else{
-                      copterImg.style.transform="scaleX(-1)";
-                      step-=1;
-                      flag1=step==0?true:false;
-                  }
-                  if(Math.round(window.innerWidth/2==step+260)){
-                      treasureImg.style.visibility="visible";
-                      function treasure(){
-                      if (window.innerHeight-250>step1&&flag){
-                          step1+=1;
-                      }else{
-                         flag=step1==0?true:false;
-                      }   
-                      treasureImg.style.top=step1+"px";
-                  }
-                  setInterval(treasure,6);
-                  }
-                  copterImg.style.left=step+"px";
-              }
-              setInterval(animation,6);
+    let copterImg=document.getElementById("copter");
+    let treasureImg=document.getElementById("treasure");
+    let step=0;
+    let step1=0;
+    let flag=true;
+    let flag1=true;
+    function animation(){ 
+        if(window.innerWidth-260>step&&flag1){
+            copterImg.style.transform="scaleX(1)";
+            step+=1; 
+        }else{
+            copterImg.style.transform="scaleX(-1)";
+            step-=1;
+            flag1=step==0?true:false;
+        }
+        if(Math.round(window.innerWidth/2==step+260)){
+            treasureImg.style.visibility="visible";
+            function treasure(){
+            if (window.innerHeight-250>step1&&flag){
+                step1+=1;
+            }else{
+                flag=step1==0?true:false;
+            }   
+            treasureImg.style.top=step1+"px";
+        }
+        setInterval(treasure,6);
+        }
+        copterImg.style.left=step+"px";
+    }
+    setInterval(animation,6);
             </code>
           </pre>
-        <h2><a name="projects">Projects</a></h2>
+        <h2 id="projects">Projects</h2>
           <ul>
             <li><a href="https://github.com/eireen888/rsschool-cv/blob/gh-pages/cv.md">cv.md</a></li>
           </ul>
-        <h2><a name="education, Languages">Education, Languages</a></h2>
+        <h2 id="education,Languages">Education, Languages</h2>
         <ul>
           <li>English - A1</li>
         </ul>
